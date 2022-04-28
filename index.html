@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Ever-growing!-main</title>
+     <!--이미지로드-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+     <!-- 제이쿼리 -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   
+     <!-- 폰트어썸 -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   
+     <!-- 테일윈드 -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+   
+     <!--애니메이션,와우-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.min.css" />
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+     <!--스와이퍼-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+     <script>new WOW().init();</script>
+</head>
+<body>
+    
+</body>
+</html>
+<head>
+   
+  <style>/* 폰트적용 */
+    @font-face {
+      font-family: "LeferiBaseType-RegularA";
+      src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiBaseType-RegularA.woff")
+        format("woff");
+      font-weight: normal;
+      font-style: normal;
+    }
+    
+    html > body {
+      font-family: "LeferiBaseType-RegularA";
+    }
+    
+    /*커스텀 라이브러리*/
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    
+    .con {
+      width: 1920px;
+      height: auto;
+      margin: 0 auto;
+    }
+    
+    @media (min-width: 1900px) {
+      body {
+        overflow-x: hidden;
+      }
+    }
+    
+    /*뜨는애니메이션 라이브러리*/
+    
+    .main-1,
+    .main-2 {
+      animation-name: infinite-01;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+    
+    @keyframes infinite-01 {
+      0% {
+        transform: translatey(0);
+      }
+    
+      50% {
+        transform: translatey(-20%);
+      }
+    
+      100% {
+        transform: translatey(0);
+      }
+    }
+    
+    /*branding-1*/
+    
+    .branding-1 {
+     background-color:#F62F68;
+      width: 1920px;
+      height: 1080px;
+    }
+    
+    /*branding-menu*/
+    .branding-menu-logo-2 {
+      left: 100px;
+      top: 32px;
+    }
+    .main-menu-branding {
+      left: 526px;
+      top: 40px;
+    }
+    
+    .branding-menu-about {
+      left: 721px;
+      top: 40px;
+    }
+    .branding-menu-portfolio {
+      left: 885px;
+      top: 40px;
+    }
+    .branding-menu-process {
+      left: 1090px;
+      top: 40px;
+    }
+    .branding-menu-experience {
+      left: 1278px;
+      top: 40px;
+    }
+    
+    /*branding-img-box*/
+    
+    .branding1-img-box-1 {
+      left: 745px;
+      top: 441px;
+    }
+    
+    .branding1-img-box-2 {
+      left: 1110px;
+      top: 680px;
+    }
+    
+    /*branding-2*/
+    
+    .branding-2 {
+      width: 1920px;
+      height: 277px;
+      background-color: #F6F6F6;
+    }
+    .branding-2-text {
+      left: 200px;
+      top: 1187px;
+    }
+    
+    /*branding-3*/
+    .branding-3 {
+      background-color:#FFFFFF;
+      width: 1920px;
+      height: 1654px;
+      z-index: -1999;
+    }
+    
+    .branding-3-img-logo {
+      top: 107px;
+      left: 0px;
+    }
+    
+    .branding-3-t-1 {
+      left: 371px;
+      top: 323px;
+    }
+    
+    .branding-3-t-2 {
+      left: 443.5px;
+      top: 640px;
+    }
+    
+    .branding-3-b-2{
+      left: 371.5px;
+      top: 934px;
+    }
+    
+    .branding-3-b-1{
+      left: 443.5px;
+      top: 1292px;
+    }
+    
+    
+    /*branding-4*/
+    .branding-4{
+      background-color:#F4F4F4;
+      width:1920px;
+      height:927px;
+    }
+    .branding-4-img-box-text{
+     
+    left: 347px;
+    top: 100px;
+    }
+    
+    .branding-4-img-box-1{
+      left:334px;
+      top:390px;
+      
+    }
+    
+    
+    /*branding-5*/
+    
+    .branding-5{
+    
+    background-color:FCFCFC;
+      width:1920px;
+      height:1350px;
+    }
+    
+    .branding-5-img-box-text{
+      left:200px;
+      top:119px;
+    }
+    
+    .branding-5-img-box-1{
+      left:200px;
+      top:408px;
+    }
+    
+    .branding-5-img-box-2{
+      left:200px;
+      top:614px;
+    }
+    
+    .branding-5-img-box-3{
+      left:200px;
+      top:917px;
+    }
+    
+    
+    /*branding-6*/
+    .branding-6{
+      background-color:#F3F3F3;
+      width:1920px;
+      height:600px;
+    }
+    
+    .branding-6-text{
+        left:311px;
+      top:40px;
+    }
+    
+    .branding-6-img-1{
+      left:786px;
+      top:182.4px;
+    }
+    .branding-6-img-2{
+        left:523px;
+      top:361px;
+    }
+    
+    .branding-6-img-3{
+        left:289px;
+      top:264px;
+    }
+    
+    /*branding-7*/
+    
+    .branding-7{
+      background-image:url('https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/branding-7-bg.png');
+       width:1920px;
+      height:645px;
+    }
+    
+    /*branding-7*/
+    
+    .branding-7-logo-1{
+      
+      top:125px;
+      left:275px;
+      
+    }
+    .branding-7-logo-2{
+      
+      top:167px;
+      left:1295px;
+      
+    }
+    
+    .see-me-about{
+      background-image:url('https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/Rectangle 82.png');
+      width:1920px;
+      height:300px;
+    }
+    .see-me-about-button{
+      left:800px;
+      top:86px;
+    }</style>
+  </head>
+  <section class="con">
+    <section class="branding relative">
+      <div class="branding-1 relative">
+        <div class="branding-1-menu">
+  
+          <span class="branding-menu-logo-2 absolute">
+            <a href="#"> <img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/branding-logo-2.png" alt=""></a>
+          </span>
+          <span class="main-menu-branding absolute"><a href="#"><img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/BRANDING-new.png" onmouseover="this.src='https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/BRANDING-h-new.png'" onmouseout="this.src='https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/BRANDING-new.png'"></a></span>
+          <span class="branding-menu-about absolute"><a href="#"><img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/ABOUT.png" onmouseover="this.src='https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/ABOUT-h.png'" onmouseout="this.src='https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/ABOUT.png'"></a></span>
+          <span class="branding-menu-portfolio absolute"><a href="#"><img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/PORTFOLIO.png" onmouseover="this.src='https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/PORTFOLIO-h.png'" onmouseout="this.src='https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/PORTFOLIO.png'"></a></span>
+          <span class="branding-menu-process absolute"><a href="#"><img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/PROCESS.png" onmouseover="this.src='https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/PROCESS-h.png'" onmouseout="this.src='https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/PROCESS.png'"></a></span>
+          <span class="branding-menu-experience absolute"><a href="#"><img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/EXPERIENCE.png" onmouseover="this.src='https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/EXPERIENCE-h.png'" onmouseout="this.src='https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/EXPERIENCE.png'"></a></span>
+  
+        </div>
+        <div class="branding1-img-box">
+          <span class="absolute branding1-img-box-1 wow fadeInUp">
+            <img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/branding-logo-new-1.png" alt="">
+          </span>
+        
+        </div>
+      </div>
+      <div class="branding-2">
+        <span class="absolute branding-2-text wow fadeInUp">
+          <img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/branding-2-new-text.png" alt="">
+        </span>
+      </div>
+      <div class="branding-3 ">
+        <div class="branding-3-img-box relative">
+  
+          <span class="branding-3-img-logo absolute">
+            <img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/about-3-main-text.png" alt="">
+  
+          </span>
+          <span class="branding-3-t-2 absolute wow fadeInUp">
+            <img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/about-3-new-2.png" alt="">
+  
+          </span>
+          <span class="branding-3-t-1 absolute wow fadeInUp"data-wow-delay="0.8s">
+            <img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/about-3-new_1.png" alt="">
+  
+          </span>
+          <span class="branding-3-b-1 absolute wow fadeInDown">
+            <img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/about-3-new-4.png" alt="">
+  
+          </span>
+          <span class="branding-3-b-2 absolute wow fadeInDown"data-wow-delay="0.8s">
+            <img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/about-3-new-3.png" alt="">
+  
+          </span>
+        </div>
+      </div>
+       <section class="branding-4 relative">
+      <div class="branding-4-img-box">
+        <span class="branding-4-img-box-text absolute wow fadeInUp">
+          <img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/branding-4-new-text.png" alt="">
+            
+          </span>
+         <span class="branding-4-img-box-1 absolute wow fadeInUp"data-wow-delay="0.1s">
+          <img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/branding-4-new-img.png" alt="">
+            
+          </span>
+      </div>
+    </section>
+    <section class="branding-5 relative">
+      <div class="branding-5-img-box">
+        <span class="branding-5-img-box-text absolute wow fadeInUp"data-wow-delay="0.3s">
+          <img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/branding-5-text-new.png" alt="">
+            
+          </span>
+        
+          <span class="branding-5-img-box-1 absolute wow fadeInUp"data-wow-delay="0.2s">
+          <img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/branding-5-1-new.png" alt="">
+            
+          </span>
+          <span class="branding-5-img-box-2 absolute wow fadeInUp">
+          <img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/branding-5-2-new.png" alt="">
+            
+          </span>
+          <span class="branding-5-img-box-3 absolute wow fadeInUp">
+          <img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/branding-5-3-new.png" alt="">
+            
+          </span>
+      </div>
+    </section>
+    <section class="branding-6 relative">
+      <div class="branding-6-img-box">
+        <span class="branding-6-text absolute wow fadeInUp">
+          <img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/branding-6-text-new.png" alt="">
+        </span>
+        <span class="branding-6-img-1 absolute wow fadeIn wow"data-wow-delay="0.2s"><img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/branding-6-logo.png" alt=""></span>
+        <span class="branding-6-img-2 absolute wow fadeIn wow"data-wow-delay="0.4s"><img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/branding-6-line.png" alt=""></span>
+        <span class="branding-6-img-3 absolute wow fadeIn wow"data-wow-delay="0.6s"><img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/branding-6-sub.png" alt=""></span>
+      </div>
+    </section>
+    <section class="branding-7 relative">
+      <div class="branding-7-img-box">
+        <span class="branding-7-logo-1 absolute wow fadeInUp"><img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/branding-7-logo-1.png" alt=""></span>
+         <span class="branding-7-logo-2 absolute wow fadeInUp"><img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/branding-7-logo-2.png" alt=""></span>
+     
+      </div>
+    </section>
+    <section class="see-me-about relative">
+      <div class="see-me-about-button absolute">
+       <a href="#"> <img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/branding/see more about-logo.png" alt=""></a>
+      </div>
+    </section>
+    </section>
+  </section>
